@@ -6,7 +6,7 @@ from apscheduler.triggers.cron import CronTrigger
 import logging
 
 logging.basicConfig()
-logging.getLogger('apscheduler').setLevel(logging.INFO)
+logging.getLogger('apscheduler').setLevel(logging.ERROR)
 
 def my_listener(event):
     if event.exception:
