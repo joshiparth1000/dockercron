@@ -32,7 +32,7 @@ while True:
                 cur_jobs.append(key.split('.')[1])
         
         for job in scheduler.get_jobs():
-            if job.id not in cur_jobs:
+            if job.name not in cur_jobs:
                 scheduler.remove_job(job.id)
 
     sleep(60)
